@@ -1,0 +1,35 @@
+{
+  "name": "emv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "start:frontend": "npm run dev --prefix frontend",
+    "start:backend": "npm run dev --prefix backend",
+    "start": "concurrently -k -n FRONTEND,BACKEND -c cyan,green \"npm run start:frontend\" \"npm run start:backend\"",
+    "install:all": "npm install && npm install --prefix frontend && npm install --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Koitoseed/EndlessMoonverse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Koitoseed/EndlessMoonverse/issues"
+  },
+  "homepage": "https://github.com/Koitoseed/EndlessMoonverse#readme",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.3",
+    "vite": "^6.0.11"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    /* Project Settings */
+    "target": "ESNext",                               /* Use the latest ECMAScript features. */
+    "module": "CommonJS",                             /* CommonJS for Node.js compatibility. */
+    "rootDir": "./src",                               /* Root directory for source files. */
+    "outDir": "./dist",                               /* Output directory for compiled files. */
+    "strict": true,                                   /* Enable all strict type-checking options. */
+    "esModuleInterop": true,                          /* Allow default imports from CommonJS modules. */
+    "forceConsistentCasingInFileNames": true,         /* Enforce consistent casing in file imports. */
+    "skipLibCheck": true,                             /* Skip type checking `.d.ts` files for faster builds. */
+
+    /* Module Resolution */
+    "moduleResolution": "node",                      /* Use Node.js-style module resolution. */
+    "resolveJsonModule": true,                       /* Enable importing JSON files. */
+    "allowSyntheticDefaultImports": true,            /* Support default imports for modules without a default export. */
+
+    /* Type Checking */
+    "strictNullChecks": true,                        /* Ensure `null` and `undefined` are handled explicitly. */
+    "noImplicitAny": true,                           /* Prevent implicit `any` types. */
+    "noImplicitThis": true,                          /* Warn if `this` is used with an implicit `any` type. */
+    "noUnusedLocals": true,                          /* Report unused local variables. */
+    "noUnusedParameters": true,                      /* Report unused parameters in functions. */
+
+    /* Source Maps */
+    "sourceMap": true,                               /* Generate source map files for debugging. */
+    "inlineSources": true,                           /* Include source code in source maps. */
+
+    /* Experimental Decorators */
+    "experimentalDecorators": true,                 /* Enable support for decorators. */
+    "emitDecoratorMetadata": true                   /* Emit metadata for decorators. */
+  },
+  "include": [
+    "./src/**/*"                                     /* Include all files in the `src` folder. */
+  ],
+  "exclude": [
+    "node_modules",                                  /* Exclude dependencies from compilation. */
+    "dist"                                          /* Exclude build output directory. */
+  ]
+}
